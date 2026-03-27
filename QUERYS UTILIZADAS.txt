@@ -1,0 +1,26 @@
+ QUERYS UTILIZADAS
+
+
+event.provider:"Microsoft-Windows-Security-Auditing" and winlog.event_id:"4625" and winlog.event_data.LogonType:"3"
+
+event.provider:"Microsoft-Windows-Security-Auditing" and winlog.event_id:4624 and winlog.event_data.LogonType:"3" 
+and related.ip : "172.16.98.100"
+
+
+event.provider:"Microsoft-Windows-Security-Auditing" and winlog.event_id:4672 and user.name:"system_admin"
+
+
+event.provider:"Microsoft-Windows-Security-Auditing" and winlog.event_id:5136 and winlog.event_data.AttributeLDAPDisplayName:"nTSecurityDescriptor"
+
+
+event.provider:"Microsoft-Windows-Security-Auditing" and winlog.event_id:4728 and winlog.event_data.TargetUserName:"Domain Admins"
+
+
+event.provider:"Microsoft-Windows-Security-Auditing" and winlog.event_id:"5140" and user.name:"system_admin"
+
+
+event.provider:"Microsoft-Windows-Security-Auditing" and winlog.event_id:"5145" and user.name:"system_admin"
+
+
+event.provider:"Microsoft-Windows-Security-Auditing" and winlog.event_id:"4674" and user.name:"system_admin"
+
