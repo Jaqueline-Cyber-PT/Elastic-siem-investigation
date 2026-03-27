@@ -45,7 +45,7 @@ Este salto crítico de privilégio transformou um acesso de usuário comum em um
 
 <img width="1901" height="882" alt="image" src="https://github.com/user-attachments/assets/06ab373c-d15a-43f2-b70f-1de0fd0c9c07" />
 
-### ### Ato IV: Persistência no Active Directory via Manipulação de ACL
+### Ato IV: Persistência no Active Directory via Manipulação de ACL
 
 A consolidação do controle sobre o domínio foi identificada através da query `event.provider:"Microsoft-Windows-Security-Auditing" and winlog.event_id:5136 and winlog.event_data.AttributeLDAPDisplayName:"nTSecurityDescriptor"`, monitorando mudanças nas permissões de objetos críticos. A análise técnica revelou que o atacante modificou a Lista de Controle de Acesso (ACL) do grupo **Domain Admins**, alterando o descritor de segurança para permitir que contas sob seu controle pudessem gerenciar o grupo de forma arbitrária.
 
